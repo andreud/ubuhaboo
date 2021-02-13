@@ -1,0 +1,19 @@
+{
+  "name": "UbuHaBoo",
+  "version": "0.0.1",
+  "description": "A handy cheat sheet for managing ubuntu instances",
+  "main": "index.js",
+  "authors": {
+    "name": "Andy",
+    "email": ""
+  },
+  "repository": "/Ubununtu Server Handbook",
+  "scripts": {
+    "dev": "vuepress dev src",
+    "build": "vuepress build src"
+  },
+  "license": "MIT",
+  "devDependencies": {
+    "vuepress": "^1.8.0"
+  }
+}
