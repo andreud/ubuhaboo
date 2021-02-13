@@ -34,22 +34,6 @@ module.exports = {
     lastUpdated: false,
     nav: [
       {
-        text: 'Guide',
-        link: '/guide/',
-      },
-      {
-        text: 'Config',
-        link: '/config/'
-      },
-      {
-        text: 'Test',
-        link: '/test/'
-      },
-      /*{
-        text: 'Filess',
-        link: '/test/files'
-      },*/
-      {
         text: 'VuePress',
         link: 'https://v1.vuepress.vuejs.org'
       }
@@ -58,18 +42,8 @@ module.exports = {
     //displayAllHeaders: true, // Default: false
 
     sidebar: {
-      '/guide/': [
-        {
-          title: 'Guide',
-          collapsable: false,
-          children: [
-            '',
-            'using-vue',
-          ]
-        }
-      ],
-
-      '/test/': [
+      
+      '/': [
         {
           title: 'Menú',
           collapsable: false,
