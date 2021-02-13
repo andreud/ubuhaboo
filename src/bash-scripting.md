@@ -1,6 +1,7 @@
 # Bash Scripting
 
-```sh
+```bash
+#!/bin/bash
 
 echo 'hi' 
 

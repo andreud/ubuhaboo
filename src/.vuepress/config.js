@@ -53,6 +53,7 @@ module.exports = {
             'users',
             'packages',
             'performance',
+            'security',
             'network',
             'bash-scripting'
           ]
