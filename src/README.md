@@ -1,4 +1,4 @@
-# Ubuntu Handbook
+## Ubu·Ha·Boo (Ubuntu Hand Book:vulcan_salute::orange_book:)
 
 ### A cheat sheet of useful commands for managing Ubuntu instances.
 

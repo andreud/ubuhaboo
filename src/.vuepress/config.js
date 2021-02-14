@@ -4,7 +4,7 @@ module.exports = {
   /**
    * Ref：https://v1.vuepress.vuejs.org/config/#title
    */
-  title: 'UbuHaBoo',
+  title: '🖖📙 Ubu·Ha·Boo',
   /**
    * Ref：https://v1.vuepress.vuejs.org/config/#description
    */
@@ -45,12 +45,14 @@ module.exports = {
       
       '/': [
         {
-          title: 'Menú',
+          //title: 'Menú',
           collapsable: false,
           children: [
-            '', // inferred README.md
+            //'', // inferred README.md
             'files',
             'users',
+            'services',
+            '/server-stack/',
             'packages',
             'performance',
             'security',
