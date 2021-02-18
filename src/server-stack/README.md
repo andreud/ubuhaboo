@@ -48,3 +48,24 @@ $ nvm use v13.6.0
 
 
 ## Elastic Search
+
+Installing 
+```shell
+$ curl -fsSL https://artifacts.elastic.co/GPG-KEY-elasticsearch | sudo apt-key add -
+$ echo "deb https://artifacts.elastic.co/packages/7.x/apt stable main" | sudo tee -a /etc/apt/sources.list.d/elastic-7.x.list
+$ sudo apt update
+$ sudo apt install elasticsearch
+
+# start service
+sudo systemctl start elasticsearch
+# Next, run the following command to enable Elasticsearch to start up every time your server boots:
+sudo systemctl enable elasticsearch
+```
+
+Configuring
+```shell
+$ sudo nano /etc/elasticsearch/elasticsearch.yml
+```
+
+[Full Article](https://www.digitalocean.com/community/tutorials/how-to-install-and-configure-elasticsearch-on-ubuntu-20-04)
+
