@@ -21,7 +21,22 @@ $ apt install nginx nginx-extras
 
 ### For Nginx
 
-## Node, pm2
+## Node, npm, nvm, pm2
+
+Install nvm
+
+```shell
+$ curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.35.3/install.sh | bash
+# To use it, you must first source your .bashrc file:
+$ source ~/.bashrc
+
+# Which versions of Node are available:
+$ nvm list-remote
+
+# Add and use any node version
+$ nvm install v13.6.0
+$ nvm use v13.6.0
+```
 
 ## MySQL
 
@@ -30,3 +45,6 @@ $ apt install nginx nginx-extras
 ## Redis
 
 ## Supervisor
+
+
+## Elastic Search
