@@ -17,10 +17,18 @@ $ sudo -l # show user permissions
 
 ## User Management
 
+Create a user with a home directory: 
+(With this method, new user wont get auto-completion nor history by default)
+```Shell
+$ useradd -m <username>
+$ passwd <username> 
+<password>
+
+```
+
+Option 2
 ```shell
-$ adduser
-$ useradd
-$ passwd
+$ adduser <username>
 ```
 
 ## Show a user groups
@@ -33,11 +41,7 @@ $ groups <username>
 
 ```shell
 $ usermod -aG sudo <username>
-```
-
-Or
-
-```shell
+# Or
 $ gpasswd -a <username> sudo
 $ gpasswd -d <username> sudo
 ```
