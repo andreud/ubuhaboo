@@ -58,3 +58,10 @@ You can leave this command in a corn job like this so it renews automatically
 ```
 0 0 1 4 * /snap/bin/certbot renew >/dev/null 2>&1
 ```
+
+## Firewall
+
+```shell
+$ ufw app list
+$ ufw status
+```
