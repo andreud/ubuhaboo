@@ -116,6 +116,45 @@ $ mysql -u{username} -p
 
 ## Postgres
 
+
+Open a postgres prompt and connect to a database
+```shell
+$ sudo -i -u postgres ## OR $ su - postgres
+$ psql
+```
+```
+postgres=# \c <your_database>
+```
+
+Configure (replace "12" with your version of postgres): 
+```
+#General:
+$ nano /etc/postgresql/12/main/postgresql.conf
+# Configure client auth (Host Based Auth):
+$ nano /etc/postgresql/12/main/pg_hba.conf
+```
+
+Open to remote connections
+```
+# 1- Edit: /etc/postgresql/12/main/pg_hba.conf, to enable client authentication, 
+# Add the remote IP:
+
+host all all 10.10.29.0/24 trust
+
+# 2- Edit: /etc/postgresql/8.2/main/postgresql.conf to enable networking for PostgreSQL
+# Replace: listen_addresses='*'
+
+# 3-  Restart Postgres service
+/etc/init.d/postgresql restart
+
+# 3- Add rule to firewall allowing postgres port
+
+ufw allow 5432
+```
+
+
+## MongoDB
+
 ## Redis
 
 ## Supervisor

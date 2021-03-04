@@ -49,6 +49,7 @@ module.exports = {
           collapsable: false,
           children: [
             //'', // inferred README.md
+            'system',
             'files',
             'users',
             'services',

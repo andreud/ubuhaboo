@@ -1,5 +1,7 @@
 # Files
 
+In Unix [Everything is a file](https://en.wikipedia.org/wiki/Everything_is_a_file)
+
 ## Reading files
 
 Basics 
@@ -22,5 +24,13 @@ $ grep -B 3 -A 2 foo README.txt
 ## Searching for files
 
 ```shell
-$ find
+# Files in /path with log extension
+$ find /path -type f -name "*.log" 
+
+# Files/dirs by name case insensitive
+$ find / -iname Company
+
+# Files edited in the las 10 minutes
+$ find / -mtime 10
+
 ```
